@@ -1,0 +1,225 @@
+{
+  "generated_at": 1764437185,
+  "total_modules": 9,
+  "total_tests": 25,
+  "passed": 25,
+  "failed": 0,
+  "errors": 0,
+  "modules": [
+    {
+      "module": "Auth Decorators",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0,
+      "details": [
+        {
+          "no": 1,
+          "case": "test_keyword_token_allows",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 2,
+          "case": "test_missing_token_denied",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 3,
+          "case": "test_positional_token_allows",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 4,
+          "case": "test_wrong_permission_denied",
+          "result": "✅ Passed"
+        }
+      ],
+      "console": "test_keyword_token_allows (tests.ui_tests.test_auth_decorators_gui.TestAuthDecorators) ... ok\ntest_missing_token_denied (tests.ui_tests.test_auth_decorators_gui.TestAuthDecorators) ... ok\ntest_positional_token_allows (tests.ui_tests.test_auth_decorators_gui.TestAuthDecorators) ... ok\ntest_wrong_permission_denied (tests.ui_tests.test_auth_decorators_gui.TestAuthDecorators) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "module": "Inventory Service",
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "details": [
+        {
+          "no": 1,
+          "case": "test_admin_adjust_and_reserve",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 2,
+          "case": "test_cashier_cannot_adjust_but_can_reserve",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 3,
+          "case": "test_transactions_and_list",
+          "result": "✅ Passed"
+        }
+      ],
+      "console": "test_admin_adjust_and_reserve (tests.ui_tests.test_inventory_permissions_gui.TestInventoryPermissions) ... ok\ntest_cashier_cannot_adjust_but_can_reserve (tests.ui_tests.test_inventory_permissions_gui.TestInventoryPermissions) ... ok\ntest_transactions_and_list (tests.ui_tests.test_inventory_permissions_gui.TestInventoryPermissions) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "module": "Print Service",
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "details": [
+        {
+          "no": 1,
+          "case": "test_admin_can_print_all",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 2,
+          "case": "test_cashier_limited_prints",
+          "result": "✅ Passed"
+        }
+      ],
+      "console": "test_admin_can_print_all (tests.ui_tests.test_print_permissions_gui.TestPrintPermissions) ... ok\ntest_cashier_limited_prints (tests.ui_tests.test_print_permissions_gui.TestPrintPermissions) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.040s\n\nOK\n"
+    },
+    {
+      "module": "Template Service",
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "details": [
+        {
+          "no": 1,
+          "case": "test_editor_create_update_delete",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 2,
+          "case": "test_export_and_import",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 3,
+          "case": "test_viewer_cannot_manage_but_can_view",
+          "result": "✅ Passed"
+        }
+      ],
+      "console": "test_editor_create_update_delete (tests.ui_tests.test_template_service_gui.TestTemplateService) ... ok\ntest_export_and_import (tests.ui_tests.test_template_service_gui.TestTemplateService) ... ok\ntest_viewer_cannot_manage_but_can_view (tests.ui_tests.test_template_service_gui.TestTemplateService) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.023s\n\nOK\n"
+    },
+    {
+      "module": "Reporting Service",
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "details": [
+        {
+          "no": 1,
+          "case": "test_analyst_can_view_and_export",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 2,
+          "case": "test_generate_and_export_by_admin",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 3,
+          "case": "test_no_permission_denied",
+          "result": "✅ Passed"
+        }
+      ],
+      "console": "test_analyst_can_view_and_export (tests.ui_tests.test_reporting_service_gui.TestReportingService) ... ok\ntest_generate_and_export_by_admin (tests.ui_tests.test_reporting_service_gui.TestReportingService) ... ok\ntest_no_permission_denied (tests.ui_tests.test_reporting_service_gui.TestReportingService) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.010s\n\nOK\n"
+    },
+    {
+      "module": "Notification Service",
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "details": [
+        {
+          "no": 1,
+          "case": "test_permission_denied_for_user",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 2,
+          "case": "test_queue_and_process_requires_manage",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 3,
+          "case": "test_send_internal_and_webhook_by_notifier",
+          "result": "✅ Passed"
+        }
+      ],
+      "console": "test_permission_denied_for_user (tests.ui_tests.test_notification_service_gui.TestNotificationService) ... ok\ntest_queue_and_process_requires_manage (tests.ui_tests.test_notification_service_gui.TestNotificationService) ... ok\ntest_send_internal_and_webhook_by_notifier (tests.ui_tests.test_notification_service_gui.TestNotificationService) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.012s\n\nOK\n"
+    },
+    {
+      "module": "Analytics Service",
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "details": [
+        {
+          "no": 1,
+          "case": "test_permission_denied_for_view",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 2,
+          "case": "test_record_and_aggregates_by_analyst",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 3,
+          "case": "test_top_items",
+          "result": "✅ Passed"
+        }
+      ],
+      "console": "test_permission_denied_for_view (tests.ui_tests.test_analytics_service_gui.TestAnalyticsService) ... ok\ntest_record_and_aggregates_by_analyst (tests.ui_tests.test_analytics_service_gui.TestAnalyticsService) ... ok\ntest_top_items (tests.ui_tests.test_analytics_service_gui.TestAnalyticsService) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 1.017s\n\nOK\n"
+    },
+    {
+      "module": "Order Service",
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "details": [
+        {
+          "no": 1,
+          "case": "test_admin_create_update_cancel_and_events",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 2,
+          "case": "test_cashier_create_but_cannot_cancel",
+          "result": "✅ Passed"
+        }
+      ],
+      "console": "test_admin_create_update_cancel_and_events (tests.ui_tests.test_order_service_gui.TestOrderServicePermissions) ... ok\ntest_cashier_create_but_cannot_cancel (tests.ui_tests.test_order_service_gui.TestOrderServicePermissions) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.011s\n\nOK\n"
+    },
+    {
+      "module": "Payment Service (experimental)",
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "details": [
+        {
+          "no": 1,
+          "case": "test_admin_process_and_refund_and_events",
+          "result": "✅ Passed"
+        },
+        {
+          "no": 2,
+          "case": "test_cashier_can_process_but_cannot_refund",
+          "result": "✅ Passed"
+        }
+      ],
+      "console": "test_admin_process_and_refund_and_events (tests.ui_tests.test_payment_service_gui.TestPaymentService) ... ok\ntest_cashier_can_process_but_cannot_refund (tests.ui_tests.test_payment_service_gui.TestPaymentService) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.008s\n\nOK\n"
+    }
+  ]
+}

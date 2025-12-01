@@ -1,0 +1,18 @@
+{
+  "report_id": "874cf52b-a057-49bb-8f51-772ff8d4e335",
+  "type": "inventory_status",
+  "generated_at": 1764432653,
+  "params": {
+    "threshold": 5
+  },
+  "data": {
+    "total_items": 2,
+    "low_stock": [
+      {
+        "sku": "FOOD-001",
+        "name": "Burger",
+        "stock": 2.0
+      }
+    ]
+  }
+}

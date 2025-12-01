@@ -1,0 +1,11 @@
+{
+  "report_id": "7ce6bb5d-f1a5-4b81-a759-9a8bfd27d295",
+  "type": "sales_summary",
+  "generated_at": 1764437184,
+  "params": {},
+  "data": {
+    "total_sales": 0.0,
+    "orders_count": 0,
+    "by_day": {}
+  }
+}
