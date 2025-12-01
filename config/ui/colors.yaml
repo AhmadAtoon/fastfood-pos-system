@@ -1,35 +1,19 @@
-# پالت رنگی استاندارد سیستم فست‌فود
 palette:
-  primary:
-    main: "#2E86AB"
-    light: "#5DA8D1"
-    dark: "#1C5E7A"
-  
-  secondary:
-    main: "#A23B72"
-    light: "#D46BA0"
-    dark: "#7A2854"
-  
-  semantic:
-    success: "#28A745"
-    warning: "#FFC107"
-    danger: "#DC3545"
-    info: "#17A2B8"
-  
-  neutral:
-    light: "#F8F9FA"
-    light_gray: "#E9ECEF"
-    gray: "#6C757D"
-    dark_gray: "#495057"
-    dark: "#343A40"
-  
   background:
-    primary: "#FFFFFF"
-    secondary: "#F8F9FA"
-    sidebar: "#2C3E50"
-  
+    primary: '#FFFFFF'
+  neutral:
+    gray: '#6C757D'
+  primary:
+    dark: '#1C5E7A'
+    light: '#5DA8D1'
+    main: '#2E86AB'
+  secondary:
+    dark: '#7A2854'
+    light: '#D46BA0'
+    main: '#A23B72'
+  semantic:
+    danger: '#DC3545'
+    success: '#28A745'
+    warning: '#FFC107'
   text:
-    primary: "#212529"
-    secondary: "#6C757D"
-    disabled: "#ADB5BD"
-    inverse: "#FFFFFF"
+    primary: '#212529'
