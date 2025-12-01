@@ -1,0 +1,19 @@
+palette:
+  background:
+    primary: '#FFFFFF'
+  neutral:
+    gray: '#6C757D'
+  primary:
+    dark: '#1C5E7A'
+    light: '#5DA8D1'
+    main: '#2E86AB'
+  secondary:
+    dark: '#7A2854'
+    light: '#D46BA0'
+    main: '#A23B72'
+  semantic:
+    danger: '#DC3545'
+    success: '#28A745'
+    warning: '#FFC107'
+  text:
+    primary: '#212529'

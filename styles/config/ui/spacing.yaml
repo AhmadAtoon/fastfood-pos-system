@@ -1,0 +1,9 @@
+border_radius:
+  normal: 6px
+  small: 4px
+spacing:
+  lg: 24px
+  md: 16px
+  sm: 8px
+  xl: 32px
+  xs: 4px
