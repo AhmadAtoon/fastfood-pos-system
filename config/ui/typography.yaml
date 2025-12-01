@@ -1,0 +1,25 @@
+# تنظیمات فونت و متن فارسی
+fonts:
+  primary: "B Nazanin"
+  fallbacks: "Tahoma, Arial, sans-serif"
+  monospace: "Courier New, monospace"
+  
+sizes:
+  h1: 24
+  h2: 20
+  h3: 18
+  h4: 16
+  body: 14
+  small: 12
+  tiny: 10
+  
+weights:
+  light: 300
+  normal: 400
+  medium: 500
+  bold: 700
+  
+rtl_settings:
+  text_direction: "rtl"
+  alignment: "right"
+  digit_type: "persian"

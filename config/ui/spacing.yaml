@@ -1,0 +1,30 @@
+# استانداردهای فاصله و اندازه
+units:
+  base_unit: 8px
+  scale_factor: 1.5
+  
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 24px
+  xl: 32px
+  xxl: 48px
+  
+borders:
+  radius:
+    small: 4px
+    medium: 8px
+    large: 12px
+    circle: 50%
+  
+  width:
+    thin: 1px
+    normal: 2px
+    thick: 4px
+  
+shadows:
+  level1: "0 1px 3px rgba(0,0,0,0.12)"
+  level2: "0 3px 6px rgba(0,0,0,0.16)"
+  level3: "0 10px 20px rgba(0,0,0,0.19)"
+  level4: "0 14px 28px rgba(0,0,0,0.25)"
