@@ -1,0 +1,5 @@
+__pycache__/
+reports_cache/
+scan_reports/
+test_reports/
+project_code_report.json
