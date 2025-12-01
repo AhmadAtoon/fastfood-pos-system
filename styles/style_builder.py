@@ -58,19 +58,21 @@ class YamlStyleLoader:
     """بارگذاری و مدیریت تنظیمات استایل از YAML"""
     
     def __init__(self, config_dir: str = None):
-        # تعیین مسیر صحیح config - FIXED
+        # تعیین مسیر صحیح config - نسخه اصلاح شده
         if config_dir is None:
-            # مسیر مطلق از محل فایل اسکریپت
-            script_dir = Path(__file__).parent.absolute()
-            project_root = script_dir.parent
+            # پیدا کردن ریشه پروژه به درستی
+            current_file = Path(__file__).absolute()
+            
+            # اگر از داخل پوشه styles اجرا می‌شود
+            if current_file.parent.name == 'styles':
+                project_root = current_file.parent.parent
+            else:
+                project_root = current_file.parent
+                
             self.config_dir = project_root / "config" / "ui"
         else:
             self.config_dir = Path(config_dir)
             
-        print(f"🔍 مسیر config جستجو شده: {self.config_dir}")
-        print(f"🔍 مسیر مطلق: {self.config_dir.absolute()}")
-        print(f"🔍 وجود دارد: {self.config_dir.exists()}")
-        
         self.colors_data: Dict[str, Any] = {}
         self.typography_data: Dict[str, Any] = {}
         self.spacing_data: Dict[str, Any] = {}
@@ -82,11 +84,7 @@ class YamlStyleLoader:
             # بررسی وجود پوشه
             if not self.config_dir.exists():
                 logger.error(f"❌ پوشه config/ui یافت نشد: {self.config_dir}")
-                print(f"❌ پوشه config/ui یافت نشد: {self.config_dir}")
-                print(f"📁 دایرکتوری فعلی: {Path.cwd()}")
                 return False
-            
-            print(f"✅ پوشه config/ui پیدا شد")
             
             # بارگذاری رنگ‌ها
             colors_path = self.config_dir / "colors.yaml"
@@ -94,9 +92,8 @@ class YamlStyleLoader:
                 with open(colors_path, 'r', encoding='utf-8') as f:
                     data = yaml.safe_load(f)
                     self.colors_data = data if data else {}
-                    print(f"✅ رنگ‌ها بارگذاری شد: {colors_path.name}")
             else:
-                print(f"❌ فایل رنگ‌ها یافت نشد: {colors_path}")
+                logger.warning(f"⚠️ فایل رنگ‌ها یافت نشد: {colors_path.name}")
                 return False
             
             # بارگذاری تایپوگرافی
@@ -105,9 +102,8 @@ class YamlStyleLoader:
                 with open(typography_path, 'r', encoding='utf-8') as f:
                     data = yaml.safe_load(f)
                     self.typography_data = data if data else {}
-                    print(f"✅ تایپوگرافی بارگذاری شد: {typography_path.name}")
             else:
-                print(f"❌ فایل تایپوگرافی یافت نشد: {typography_path}")
+                logger.warning(f"⚠️ فایل تایپوگرافی یافت نشد: {typography_path.name}")
                 return False
             
             # بارگذاری فاصله‌ها
@@ -116,17 +112,15 @@ class YamlStyleLoader:
                 with open(spacing_path, 'r', encoding='utf-8') as f:
                     data = yaml.safe_load(f)
                     self.spacing_data = data if data else {}
-                    print(f"✅ فاصله‌ها بارگذاری شد: {spacing_path.name}")
             else:
-                print(f"❌ فایل فاصله‌ها یافت نشد: {spacing_path}")
+                logger.warning(f"⚠️ فایل فاصله‌ها یافت نشد: {spacing_path.name}")
                 return False
             
             self._loaded = True
-            print("🎨 تمامی تنظیمات UI بارگذاری شدند")
             return True
             
         except Exception as e:
-            print(f"❌ خطا در بارگذاری YAML: {str(e)}")
+            logger.error(f"❌ خطا در بارگذاری YAML: {str(e)}")
             return False
     
     def get_nested_value(self, data: Dict, path: str, default: Any = None) -> Any:
